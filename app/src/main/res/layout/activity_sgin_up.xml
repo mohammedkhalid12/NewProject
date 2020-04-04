@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SginUpActivity">
+
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    app:srcCompat="@drawable/peson"
+    >
+
+
+</ImageView>
+    <TextView
+
+        android:id="@+id/loginTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_weight="1"
+        android:text="@string/sign_up"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_marginTop="300dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/usernemwET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="131dp"
+                android:ems="10"
+                android:inputType="text">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        />
+
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/datelay2"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_marginTop="80dp"
+                android:hint="@string/date_of_birth"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:id="@+id/downArrow"
+            android:layout_height="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="290dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/down_arrow"/>
+
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:id="@+id/laydate"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="100dp">
+
+                <EditText
+                    android:id="@+id/date_of_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/choose_your_date"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/start"
+        android:layout_alignParentBottom="true"
+        android:overScrollMode="always"
+        android:clickable="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+</RelativeLayout>
+
+
+
+
+
+
+
